@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Shapes</title>
+    <link rel="stylesheet" href="shapes.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Shapes Guru</h1>
+        <nav>
+            <!-- Navigation -->
+        </nav>
+    </header>
+
+    <main class="shapes-lesson">
+        <h2>Lesson 2: Shapes</h2>
+        <p>Let's learn about different shapes and their names!</p>
+
+        <!-- Shapes Icons -->
+        <div class="shapes-icons">
+            <!-- SVG or Font icons can be used here -->
+            <!-- Example: -->
+            <!-- Circle Icon -->
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" fill="red" />
+            </svg>
+            <!-- Square Icon -->
+            <svg height="100" width="100">
+                <rect x="10" y="10" width="80" height="80" fill="green" />
+            </svg>
+            <!-- Triangle Icon -->
+            <svg height="100" width="100">
+                <polygon points="50,10 10,90 90,90" fill="blue" />
+            </svg>
+        </div>
+
+        <!-- Quizzes Section-->
+        <section class="quizzes">
+
+            <!-- Quiz 1 - Identify the Shape-->
+            <div class="quiz quiz-identify-shape">
+                <p>Which shape is this?</p>
+                <!-- Shape Image or Icon-->
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" fill="red" />
+                </svg>
+                <p>Answer Options:</p>
+                <input type="radio" id="circle" name="shape" value="circle">
+                <label for="circle">Circle</label><br>
+                <input type="radio" id="square" name="shape" value="square">
+                <label for="square">Square</label><br>
+                <input type="radio" id="triangle" name="shape" value="triangle">
+                <label for="triangle">Triangle</label><br>
+                <button onclick="checkAnswer()">Submit</button>
+            </div>
+
+             <!-- Quiz 2 - Match the Shape -->
+             <div class="quiz quiz-match-shape">
+                 <p>Match the shape with its name</p>
+                 <!-- Shape Images or Icons -->
+                 <div class="shape-images">
+                     <svg height="100" width="100">
+                         <circle cx="50" cy="50" r="40" fill="red" />
+                     </svg>
+                     <svg height="100" width="100">
+                         <rect x="10" y="10" width="80" height="80" fill="green" />
+                     </svg>
+                     <svg height="100" width="100">
+                         <polygon points="50,10 10,90 90,90" fill="blue" />
+                     </svg>
+                 </div>
+                 <!-- Shape Names -->
+                 <div class="shape-names">
+                     <div class="shape-name" draggable="true" ondragstart="drag(event)" id="circle-name">Circle</div>
+                     <div class="shape-name" draggable="true" ondragstart="drag(event)" id="square-name">Square</div>
+                     <div class="shape-name" draggable="true" ondragstart="drag(event)" id="triangle-name">Triangle</div>
+                 </div>
+                 <!-- Drop Zones -->
+                 <div class="drop-zones">
+                     <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" id="circle-zone"></div>
+                     <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" id="square-zone"></div>
+                     <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" id="triangle-zone"></div>
+                 </div>
+                 <button onclick="checkMatch()">Submit</button>
+             </div>
+
+             <!-- Quiz 3 - Draw the Shape -->
+             <div class="quiz quiz-draw-shape">
+                 <p>Draw the shape using your mouse or finger</p>
+                 <!-- Shape Name -->
+                 <div class="shape-name">Circle</div>
+                 <!-- Canvas -->
+                 <canvas id="canvas" width="300" height="300"></canvas>
+                 <!-- Buttons -->
+                 <button onclick="clearCanvas()">Clear</button>
+                 <button onclick="checkDrawing()">Submit</button>
+             </div>
+
+         </section>
+
+     </main>
+
+     ... (footer and other elements)
+
+</div>
+
+
+<script src='shapes.js'></script>
+</body>
+</html>

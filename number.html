@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBC GURU - Kindergarten - Numbers</title>
+  <!-- link to the external css file -->
+  <link rel="stylesheet" href="numbers.css">
+  <!-- link to the font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1><span class="blue">C</span><span class="red">B</span><span class="green">C</span> <span class="gray">GURU</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="kindergarten.html"><i class="fas fa-child"></i> Kindergarten</a></li>
+          <li><a href="grade1.html"><i class="fas fa-pencil-alt"></i> Grade 1</a></li>
+          <li><a href="grade2.html"><i class="fas fa-book"></i> Grade 2</a></li>
+          <li><a href="grade3.html"><i class="fas fa-graduation-cap"></i> Grade 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="numbers">
+    <div class="container">
+      <h2>Lesson 1: Numbers</h2>
+      <p>Learn to count from 1 to 10 with fun and colorful activities!</p>
+      <!-- create a div to hold the flash cards -->
+      <div class="flash-cards">
+        <!-- create a flash card for each number using a div with a class of card -->
+        <!-- use the data-number attribute to store the number value -->
+        <!-- use the data-color attribute to store the color name -->
+        <!-- use the data-sound attribute to store the sound file name -->
+        <div class="card" data-number="1" data-color="red" data-sound="one.mp3">
+          <!-- use an h3 element to display the number -->
+          <h3>1</h3>
+        </div>
+        <div class="card" data-number="2" data-color="orange" data-sound="two.mp3">
+          <h3>2</h3>
+        </div>
+        <div class="card" data-number="3" data-color="yellow" data-sound="three.mp3">
+          <h3>3</h3>
+        </div>
+        <div class="card" data-number="4" data-color="green" data-sound="four.mp3">
+          <h3>4</h3>
+        </div>
+        <div class="card" data-number="5" data-color="blue" data-sound="five.mp3">
+          <h3>5</h3>
+        </div>
+        <div class="card" data-number="6" data-color="indigo" data-sound="six.mp3">
+          <h3>6</h3>
+        </div>
+        <div class="card" data-number="7" data-color="violet" data-sound="seven.mp3">
+          <h3>7</h3>
+        </div>
+        <div class="card" data-number="8" data-color="pink" data-sound="eight.mp3">
+          <h3>8</h3>
+        </div>
+        <div class="card" data-number="9" data-color="brown" data-sound="nine.mp3">
+          <h3>9</h3>
+        </div>
+        <div class="card" data-number="10" data-color="black" data-sound="ten.mp3">
+          <h3>10</h3>
+        </div>
+      </div>
+      <!-- create a div to hold the quiz -->
+      <div class="quiz">
+        <!-- create a h3 element to display the quiz question -->
+        <h3>Which number is this?</h3>
+        <!-- create a div to display the quiz card -->
+         <div class="quiz-card">
+
+          <img src="6.JPG" alt="A flash card with the number 6 upside down">
+        </div> 
+          
+        <!-- create a div to display the quiz options -->
+        <div class="quiz-options">
+          <!-- use a button element for each option -->
+          <!-- use the data-option attribute to store the option value -->
+          <button data-option="5">Five</button>
+          <button data-option="6">six</button>
+          <button data-option="8">Eight</button>
+          <button data-option="10">Ten</button>
+          <button data-option="9">Nine</button>
+        </div>
+        <!-- create a div to display the quiz feedback -->
+        <div class="quiz-feedback">
+          <!-- use a p element to display the feedback message -->
+          <p></p>
+        </div>
+      </div>
+      <!-- create a div to hold the next button -->
+      <div class="next">
+        <!-- use a button element to display the next button -->
+        <button>Next</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <h4>Follow us on</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+      <div class="copy">
+        <p>© 2024 CBC GURU. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- link to the external js file -->
+  <script src="number.js"></script>
+</body>
+</html>

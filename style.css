@@ -1,0 +1,270 @@
+/* CSS code for the landing page */
+
+/* Use variables for colors */
+:root {
+  --blue: #1c7ed6;
+  --red: #e03131;
+  --green: #28a745;
+  --gray: #6c757d;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Use a custom font for the body */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use a container class for centering and padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the header section */
+header {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the logo section */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Use span elements to color the logo letters */
+.logo span {
+  color: var(--white);
+}
+
+.logo .blue {
+  color: #ffb109;
+}
+
+.logo .red {
+  color: var(--red);
+}
+
+.logo .green {
+  color: var(--green);
+}
+
+.logo .gray {
+  color: var(--gray);
+}
+
+/* Style the navigation section */
+nav {
+  font-size: 1.2rem;
+}
+
+/* Style the navigation list */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation items */
+nav li {
+  margin-left: 20px;
+}
+
+/* Style the navigation links */
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Add some space between the icon and the text */
+nav a i {
+  margin-right: 5px;
+}
+
+/* Style the main section */
+main {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 40px 0;
+}
+
+/* Style the introduction section */
+.intro {
+  text-align: center;
+}
+
+/* Style the introduction heading */
+.intro h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Style the introduction paragraph */
+.intro p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/* Style the grades section */
+.grades {
+  text-align: center;
+}
+
+/* Style the grades heading */
+.grades h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style the cards container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+/* Style the card element */
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Style the card image */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the card overlay */
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the card overlay text */
+.card .overlay p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Style the footer section */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the social section */
+.social {
+  font-size: 1.2rem;
+}
+
+/* Style the social list */
+.social ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the social items */
+.social li {
+  margin-right: 20px;
+}
+
+/* Style the social links */
+.social a {
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Add some space between the icon and the text */
+.social a i {
+  margin-right: 5px;
+}
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+
+  /* Adjust the header styles for smaller screens */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Adjust the navigation styles for smaller screens */
+  nav {
+    margin-top: 20px;
+  }
+
+  /* Adjust the navigation items for smaller screens */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust the navigation links for smaller screens */
+  nav li {
+    margin: 10px 0;
+  }
+
+  /* Adjust the main section padding for smaller screens */
+  main {
+    padding: 20px 0;
+  }
+
+  /* Adjust the grades section heading for smaller screens */
+  .grades h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust the card size for smaller screens */
+  .card {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* Adjust the social section styles for smaller screens */
+  .social {
+    margin-top: 20px;
+  }
+
+  /* Adjust the social items for smaller screens */
+  .social li {
+    margin-right: 10px;
+  }
+
+  /* Adjust the footer styles for smaller screens */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

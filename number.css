@@ -1,0 +1,81 @@
+/* numbers.css */
+
+/* You can use the same CSS code as in kindergarten.css, but change the class name from .kindergarten to .numbers */
+
+.numbers {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  
+  .numbers h2 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .number {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .number img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .number-details {
+    margin-left: 20px;
+  }
+  
+  .number-details h3 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .number-details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00f;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #0f0;
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .number {
+      flex-direction: column;
+    }
+  
+    .number img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .number-details {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  

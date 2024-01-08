@@ -1,0 +1,205 @@
+/* kindergarten.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    float: left;
+  }
+  
+  .logo h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .logo span {
+    font-weight: bold;
+  }
+  
+  .blue {
+    color: #00f;
+  }
+  
+  .red {
+    color: #f00;
+  }
+  
+  .green {
+    color: #0f0;
+  }
+  
+  .gray {
+    color: #999;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #00f;
+  }
+  
+  .kindergarten {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  
+  .kindergarten h2 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .lesson {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .lesson img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .lesson-details {
+    margin-left: 20px;
+  }
+  
+  .lesson-details h3 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .lesson-details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00f;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #0f0;
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px 0;
+  }
+  
+  .social {
+    float: left;
+  }
+  
+  .social h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .social ul {
+    list-style: none;
+  }
+  
+  .social ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .copy {
+    float: right;
+  }
+  
+  .copy p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .logo,
+    nav {
+      float: none;
+      text-align: center;
+    }
+  
+    .lesson {
+      flex-direction: column;
+    }
+  
+    .lesson img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .lesson-details {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+/* kindergarten.css */
+
+/* Add this media query at the end of the file */
+
+@media (max-width: 480px) {
+    nav ul li a {
+      box-shadow: 0 0 5px #fff;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 5px 10px;
+      text-shadow: 0 0 2px #fff;
+    }
+  }
+    
